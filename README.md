@@ -1,4 +1,4 @@
-# Web Application Project
+# Web Application Development Project
 
 ### Project Description
 The project aims at creating a responsive webpage using HTML, CSS & JS. This was an academic project to apply the concepts I learned from Lectures.
