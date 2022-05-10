@@ -1,0 +1,554 @@
+/* ********************************  General Styling ******************************** */
+
+*{
+  font-family: 'Arial', 'Times New Roman';
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: all .2s linear;
+  text-transform: uppercase;
+}
+
+*::selection{
+  background: #2e86ab;
+  color: #ffffff;
+}
+
+html{
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+  width: 0.5em;
+}
+
+
+html::-webkit-scrollbar-track{
+  background: #2e86ab;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: #ffa309;
+}
+
+body{
+  height: 300em;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1rem 5%;
+  background: #D1E7FF;
+  box-shadow: 0 .1rem .1rem #2e86ab;
+}
+
+header #menu{
+  font-size: 1.5rem;
+  color: #2e86ab;
+  cursor: pointer;
+}
+
+
+header .logo{
+  color: #2e86ab;
+  font-size: 1.5rem;
+}
+
+header .navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+header .navbar ul li{
+  margin: 0 1rem;
+}
+
+header .navbar ul li a{
+  font-size: 1rem;
+  color: #2e86ab;
+}
+
+header .navbar ul li a:hover{
+  color: #ffa309;
+}
+
+header #login{
+  font-size: 1.5rem;
+  color: #2e86ab;
+  cursor: pointer;
+}
+
+header #login:hover{
+  color: #ffa309;
+}
+
+/* ********************************  Form Styling ******************************** */
+
+.login-form{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: -120%;
+  z-index: 1000;
+  background: #2e86ab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form.popup{
+  top:0;
+}
+
+.login-form form{
+  width: 35rem;
+  background: #ffffff;
+  margin: 0 2rem;
+  padding: 1rem 3rem;
+  border-radius: .5rem;
+  box-shadow: 0 .1rem 0.3rem #2e86ab;
+  position: relative;
+}
+
+.login-form form h2{
+  font-size: 2rem;
+  color: #2e86ab;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.login-form form .box{
+  width: 100%;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  border-bottom: 0.15rem solid #2e86ab;
+  font-size: 1rem;
+  color: #aaa8aa;
+  text-transform: none;
+}
+
+.login-form form .box:focus{
+  border-color: #ffa309;
+}
+
+.login-form form .box:nth-child(3){
+  margin-bottom: 1.5rem;
+}
+
+.login-form form p{
+  font-size: 1rem;
+  color: #aaa8aa;
+  padding: 0.5rem 0;
+  text-transform: capitalize;
+}
+
+.login-form form p a{
+  color: #ffa309;
+}
+
+.btn{
+  padding: 0.5rem 3rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #2e86ab;
+  border-radius: 20rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  box-shadow: 0 .1rem 0.3rem #2e86ab;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -100%;
+  background: #ffffff;
+  height: 150%;
+  width: 20%;
+  transform: rotate(25deg);
+  z-index: -1;
+}
+
+.btn:hover::before{
+  left: 120%;
+  transition: .5s linear;
+}
+
+
+.login-form form .btn{
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.login-form form .btn:hover{
+  background-color: #ffa309;
+}
+
+.login-form form .fa-xmark{
+  position: absolute;
+  top: 1.9rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #2e86ab;
+}
+
+.login-form form .fa-xmark:hover{
+    color: #ffa309;
+}
+
+/* ********************************  Main Page Styling ******************************** */
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+section{
+  min-height: 100vh;
+  padding: 1rem 7%;
+  padding-top: 5rem;
+  background: url(images/analysis.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  text-align: center;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+}
+
+.home h1{
+  font-size: 2.5rem;
+  color: #2e86ab;
+  text-transform: none;
+}
+
+.home p{
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-family: "Arial";
+  font-weight: normal;
+  text-transform: none;
+  padding: 1rem 0;
+  width: 70rem;
+}
+
+section .btn:hover{
+  background-color: #ffa309;
+}
+
+.home .animation{
+  position: absolute;
+  bottom: 0rem;
+  left: 0;
+  height: 2.5rem;
+  width: 100%;
+  background: url(images/binary.png);
+  block-size: 100rem 15rem;
+  filter: drop-shadow(0 -0.1rem 0.1rem rgba(0, 0, 0, 0.2));
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    background-position-x: 0rem;
+  }
+  100%{
+    background-position-x: 100rem;
+  }
+}
+
+/* ********************************  About Section Styling ******************************** */
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow:inset 0 0 0 2000px rgba(255, 255, 255,1);
+}
+
+.about .image{
+  flex: 1 1 30rem;
+}
+
+.about .image img{
+  height: 50vh;
+  width: 100%;
+}
+
+.about .content{
+    flex: 1 1 35rem;
+}
+
+.about .content h2{
+  font-size: 1.5rem;
+  color: #046e8f;
+}
+
+.about .content p{
+  font-size: 1.1rem;
+  line-height: 2rem;
+  font-weight: normal;
+  color: black;
+  padding: 0.5rem;
+  text-transform: none;
+}
+
+/* ********************************  Courses Section Styling ******************************** */
+
+.courses{
+  padding-top: 5rem;
+  background: url(images/courses.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.8);
+}
+.courses .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.heading{
+  color: #2e86ab;
+  padding: 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.courses .box-container .box{
+  width: 31rem;
+  border: 0.1rem solid rgba(255, 140, 0, 1);
+  position: relative;
+  margin: 1.5rem;
+}
+
+.courses .box-container .box img{
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.courses .box-container .box .content{
+  padding: 1rem;
+}
+
+.courses .box-container .box .content .stars i{
+  color: #ffa309;
+  font-size: 1.5rem;
+  padding: 1rem 0.1rem;
+}
+
+.courses .box-container .box .content .title{
+  color: #2e86ab;
+  font-size: 1.5rem;
+}
+
+.courses .box-container .box .content .title:hover{
+  color: #ffa309;
+  text-decoration: underline;
+}
+
+.courses .box-container .box .content p{
+  padding: 1rem 0;
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: left;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.courses .box-container .box .content .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+  border-top: 0.1rem solid rgba(255, 140, 0, 1);
+}
+
+.box .content .stars .info h2{
+  font-size: 1.5rem;
+  padding: 0.1rem;
+  color: #ffffff;
+
+}
+
+.courses .box-container .box .price{
+  position: absolute;
+  top: 17.9rem;
+  right: 1rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  text-align: center;
+  border-radius: 50%;
+  background: #ffa309;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+/* ********************************  Tutors Section Styling ******************************** */
+
+.tutors{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow:inset 0 0 0 2000px rgba(255, 255, 255,1);
+}
+
+.tutors .image{
+  flex: 1 1 30rem;
+}
+
+.tutors .image img{
+  height: 50vh;
+  width: 100%;
+}
+
+.tutors .content{
+    flex: 1 1 35rem;
+}
+
+.tutors .content h2{
+  font-size: 2rem;
+  color: #046e8f;
+  padding: 0.8rem;
+}
+
+.tutors .content h3{
+  font-size: 1.5rem;
+  color: #000000;
+  padding: 0.5rem;
+}
+
+
+.tutors .content p{
+  font-size: 1.1rem;
+  font-weight: normal;
+  text-transform: none;
+  color: black;
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+/* ********************************  Contact Section Styling ******************************** */
+
+.contact{
+  background: url(images/help.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  text-align: center;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+}
+
+.contact .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact .row form{
+  flex: 1 1 50rem;
+  background: #222;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  align-items: flex-start;
+}
+
+.contact .row form .box, .contact .row form .inquiry-box{
+  height: 3rem;
+  width: 49%;
+  border: 0.1rem solid #2e86ab;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  text-transform: none;
+  background: none;
+  color: #2e86ab;
+}
+
+.contact .row form .box:focus, .contact .row form .inquiry-box:focus{
+  border-color: #ffa309;
+}
+
+.contact .row form .inquiry-box{
+  height: 15rem;
+  padding: 1rem;
+  resize: none;
+  width: 100%;
+}
+
+.contact .row form .btn{
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* ********************************  Footer Section Styling ******************************** */
+
+.footer{
+  background: #D1E7FF;
+}
+
+.footer .box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+  margin: 1.5rem;
+  text-align: center;
+  flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 1.5rem;
+  color: #2e86ab;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+  font-size: 1rem;
+  color: #000000;
+  padding: 0.5rem 0;
+  text-transform: none;
+}
+
+.footer .box-container .box p i{
+  padding-right: 0.5rem;
+  color: #2e86ab;
+  font-size: 1rem;
+}
+
+/* **************************************************************************************** */
