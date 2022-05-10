@@ -1,7 +1,7 @@
 # Web Application Development Project
 
 ### Project Description
-The project aims at creating a responsive webpage using HTML, CSS & JS. This was an academic project to apply the concepts I learned from Lectures.
+The project aims at creating a responsive webpage using HTML, CSS & JS. This was an academic project to apply the concepts I learned from Lectures during the semester.
 
 ### About the Webpage
 The idea of the webpage was to create a responsive website for Data Analysis courses that provides learners with all tools and software in order to become Data Analysts. It contained a section for the available courses and a section to provide some information to the learner about how good the tutors are. Finally, we added a section for receiving students' inquiries.
