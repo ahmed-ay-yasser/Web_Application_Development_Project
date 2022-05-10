@@ -37,5 +37,5 @@ Visit: https://atom.io/p and check the system requirements, then install the app
 
 
 ### Exploring the Webpage
-To fully experience the responsiveness of the webpage, you can download the "Webpage.htm", "styles.css" & "javascript.js" Files in addition to the "images" Folder.
+To fully experience the responsiveness of the webpage, you can download the "Webpage.html", "styles.css" & "javascript.js" Files in addition to the "images" Folder.
 Once downloaded, you can open the HTML file and start exploring the webpage.
